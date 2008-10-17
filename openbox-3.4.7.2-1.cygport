@@ -1,0 +1,8 @@
+DESCRIPTION="Highly configurable *box-style window manager"
+HOMEPAGE="http://icculus.org/openbox/"
+SRC_URI="http://icculus.org/openbox/releases/${P}.tar.gz"
+PATCH_URI="3.4.7.2-no-undefined.patch"
+
+DIFF_EXCLUDES="m4"
+
+CYGCONF_ARGS="--disable-static"
