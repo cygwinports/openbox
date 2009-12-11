@@ -8,21 +8,21 @@ Openbox uses the *box visual style, while providing a greater number of
 options for theme developers than previous *box implementations.
 
 Runtime requirements:
-  cygwin-1.7.0-44
-  libgcc1-4.3.2-2
-  libglib2.0_0-2.20.0-1
-  libICE6-1.0.4-10
-  libintl8-0.17-10
-  libpango1.0_0-1.24.0-1
-  libSM6-1.1.0-10
-  libstartup-notification1_0-0.9-10
-  libX11_6-1.2-10
-  libXau6-1.0.4-10
-  libXcursor1-1.1.9-10
-  libXext6-1.0.5-10
-  libXft2-2.1.13-10
-  libXinerama1-1.0.3-10
-  libxml2-2.7.3-10
+  cygwin-1.7.0-67
+  libgcc1-4.3.4-1
+  libglib2.0_0-2.22.2-1
+  libICE6-1.0.6-1
+  libintl8-0.17-11
+  libpango1.0_0-1.26.0-1
+  libSM6-1.1.1-1
+  libstartup-notification1_0-0.10-1
+  libX11_6-1.3.2-2
+  libXau6-1.0.5-1
+  libXcursor1-1.1.10-1
+  libXext6-1.1.1-1
+  libXft2-2.1.14-1
+  libXinerama1-1.1-1
+  libxml2-2.7.4-1
   libXrandr2-1.3.0-10
   python-2.5.4-10
   python-xdg-0.15-10
@@ -31,15 +31,15 @@ Runtime requirements:
 Build requirements:
 (besides corresponding -devel packages)
   autoconf2.5-2.63-10
-  automake1.9-1.9.6-10
-  binutils-20080624-2
-  cygport-0.9.6-1
-  gawk-3.1.6-2
-  gcc4-core-4.3.2-2
-  gettext-devel-0.17-10
-  libtool-2.2.7a-11
+  automake1.10-1.10.2-10
+  binutils-2.19.51-1
+  cygport-0.9.10-1
+  gawk-3.1.7-1
+  gcc4-core-4.3.4-1
+  gettext-devel-0.17-11
+  libtool-2.2.7a-14
   make-3.81-2
-  pkg-config-0.23a-2
+  pkg-config-0.23b-10
   sed-4.1.5-2
 
 Canonical website:
@@ -51,149 +51,22 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack openbox-3.4.7.2-X-src.tar.bz2
+  unpack openbox-3.4.8-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./openbox-3.4.7.2-X.cygport all
+  cygport ./openbox-3.4.8-X.cygport all
 
 This will create:
-  /usr/src/openbox-3.4.7.2-X-src.tar.bz2
-  /usr/src/openbox-3.4.7.2-X.tar.bz2
+  /usr/src/openbox-3.4.8-X-src.tar.bz2
+  /usr/src/openbox-3.4.8-X.tar.bz2
 
 -------------------------------------------
 
-Files included in the binary package:
-
-  /etc/xdg/openbox/autostart.sh
-  /etc/xdg/openbox/menu.xml
-  /etc/xdg/openbox/rc.xml
-  /usr/bin/cygobparser-21.dll
-  /usr/bin/cygobrender-21.dll
-  /usr/bin/gdm-control.exe
-  /usr/bin/gnome-panel-control.exe
-  /usr/bin/openbox-gnome-session
-  /usr/bin/openbox-kde-session
-  /usr/bin/openbox-session
-  /usr/bin/openbox.exe
-  /usr/include/openbox/3.4/openbox/color.h
-  /usr/include/openbox/3.4/openbox/font.h
-  /usr/include/openbox/3.4/openbox/geom.h
-  /usr/include/openbox/3.4/openbox/gradient.h
-  /usr/include/openbox/3.4/openbox/image.h
-  /usr/include/openbox/3.4/openbox/instance.h
-  /usr/include/openbox/3.4/openbox/mask.h
-  /usr/include/openbox/3.4/openbox/parse.h
-  /usr/include/openbox/3.4/openbox/render.h
-  /usr/include/openbox/3.4/openbox/theme.h
-  /usr/include/openbox/3.4/openbox/version.h
-  /usr/lib/libobparser.dll.a
-  /usr/lib/libobparser.la
-  /usr/lib/libobrender.dll.a
-  /usr/lib/libobrender.la
-  /usr/lib/openbox/xdg-autostart
-  /usr/lib/pkgconfig/obparser-3.0.pc
-  /usr/lib/pkgconfig/obrender-3.0.pc
-  /usr/share/doc/openbox-3.4.7.2/ABOUT-NLS
-  /usr/share/doc/openbox-3.4.7.2/AUTHORS
-  /usr/share/doc/openbox-3.4.7.2/CHANGELOG
-  /usr/share/doc/openbox-3.4.7.2/COMPLIANCE
-  /usr/share/doc/openbox-3.4.7.2/COPYING
-  /usr/share/doc/openbox-3.4.7.2/README
-  /usr/share/doc/openbox-3.4.7.2/menu.xsd
-  /usr/share/doc/openbox-3.4.7.2/rc-mouse-focus.xml
-  /usr/share/doc/openbox-3.4.7.2/rc.xsd
-  /usr/share/doc/openbox-3.4.7.2/xbm/bullet.xbm
-  /usr/share/doc/openbox-3.4.7.2/xbm/close.xbm
-  /usr/share/doc/openbox-3.4.7.2/xbm/desk.xbm
-  /usr/share/doc/openbox-3.4.7.2/xbm/desk_toggled.xbm
-  /usr/share/doc/openbox-3.4.7.2/xbm/iconify.xbm
-  /usr/share/doc/openbox-3.4.7.2/xbm/max.xbm
-  /usr/share/doc/openbox-3.4.7.2/xbm/max_toggled.xbm
-  /usr/share/doc/openbox-3.4.7.2/xbm/shade.xbm
-  /usr/share/doc/openbox-3.4.7.2/xbm/shade_toggled.xbm
-  /usr/share/gnome/wm-properties/openbox.desktop
-  /usr/share/locale/ar/LC_MESSAGES/openbox.mo
-  /usr/share/locale/bn_IN/LC_MESSAGES/openbox.mo
-  /usr/share/locale/ca/LC_MESSAGES/openbox.mo
-  /usr/share/locale/cs/LC_MESSAGES/openbox.mo
-  /usr/share/locale/de/LC_MESSAGES/openbox.mo
-  /usr/share/locale/en@boldquot/LC_MESSAGES/openbox.mo
-  /usr/share/locale/en@quot/LC_MESSAGES/openbox.mo
-  /usr/share/locale/es/LC_MESSAGES/openbox.mo
-  /usr/share/locale/et/LC_MESSAGES/openbox.mo
-  /usr/share/locale/eu/LC_MESSAGES/openbox.mo
-  /usr/share/locale/fi/LC_MESSAGES/openbox.mo
-  /usr/share/locale/fr/LC_MESSAGES/openbox.mo
-  /usr/share/locale/hu/LC_MESSAGES/openbox.mo
-  /usr/share/locale/it/LC_MESSAGES/openbox.mo
-  /usr/share/locale/ja/LC_MESSAGES/openbox.mo
-  /usr/share/locale/nl/LC_MESSAGES/openbox.mo
-  /usr/share/locale/no/LC_MESSAGES/openbox.mo
-  /usr/share/locale/pl/LC_MESSAGES/openbox.mo
-  /usr/share/locale/pt/LC_MESSAGES/openbox.mo
-  /usr/share/locale/pt_BR/LC_MESSAGES/openbox.mo
-  /usr/share/locale/ru/LC_MESSAGES/openbox.mo
-  /usr/share/locale/sk/LC_MESSAGES/openbox.mo
-  /usr/share/locale/sv/LC_MESSAGES/openbox.mo
-  /usr/share/locale/ua/LC_MESSAGES/openbox.mo
-  /usr/share/locale/vi/LC_MESSAGES/openbox.mo
-  /usr/share/locale/zh_CN/LC_MESSAGES/openbox.mo
-  /usr/share/locale/zh_TW/LC_MESSAGES/openbox.mo
-  /usr/share/man/man1/openbox-gnome-session.1.gz
-  /usr/share/man/man1/openbox-kde-session.1.gz
-  /usr/share/man/man1/openbox-session.1.gz
-  /usr/share/man/man1/openbox.1.gz
-  /usr/share/pixmaps/openbox.png
-  /usr/share/themes/Artwiz-boxed/openbox-3/themerc
-  /usr/share/themes/Bear2/openbox-3/close.xbm
-  /usr/share/themes/Bear2/openbox-3/close_pressed.xbm
-  /usr/share/themes/Bear2/openbox-3/desk.xbm
-  /usr/share/themes/Bear2/openbox-3/desk_toggled.xbm
-  /usr/share/themes/Bear2/openbox-3/iconify.xbm
-  /usr/share/themes/Bear2/openbox-3/iconify_pressed.xbm
-  /usr/share/themes/Bear2/openbox-3/max.xbm
-  /usr/share/themes/Bear2/openbox-3/max_pressed.xbm
-  /usr/share/themes/Bear2/openbox-3/max_toggled.xbm
-  /usr/share/themes/Bear2/openbox-3/shade.xbm
-  /usr/share/themes/Bear2/openbox-3/shade_pressed.xbm
-  /usr/share/themes/Bear2/openbox-3/themerc
-  /usr/share/themes/Clearlooks-Olive/openbox-3/themerc
-  /usr/share/themes/Clearlooks/openbox-3/themerc
-  /usr/share/themes/Mikachu/openbox-3/bullet.xbm
-  /usr/share/themes/Mikachu/openbox-3/close.xbm
-  /usr/share/themes/Mikachu/openbox-3/desk.xbm
-  /usr/share/themes/Mikachu/openbox-3/iconify.xbm
-  /usr/share/themes/Mikachu/openbox-3/max.xbm
-  /usr/share/themes/Mikachu/openbox-3/themerc
-  /usr/share/themes/Natura/openbox-3/close.xbm
-  /usr/share/themes/Natura/openbox-3/close_hover.xbm
-  /usr/share/themes/Natura/openbox-3/desk.xbm
-  /usr/share/themes/Natura/openbox-3/desk_hover.xbm
-  /usr/share/themes/Natura/openbox-3/desk_toggled.xbm
-  /usr/share/themes/Natura/openbox-3/iconify.xbm
-  /usr/share/themes/Natura/openbox-3/iconify_hover.xbm
-  /usr/share/themes/Natura/openbox-3/max.xbm
-  /usr/share/themes/Natura/openbox-3/max_hover.xbm
-  /usr/share/themes/Natura/openbox-3/max_toggled.xbm
-  /usr/share/themes/Natura/openbox-3/shade.xbm
-  /usr/share/themes/Natura/openbox-3/shade_hover.xbm
-  /usr/share/themes/Natura/openbox-3/themerc
-  /usr/share/themes/Onyx-Citrus/openbox-3/themerc
-  /usr/share/themes/Onyx/openbox-3/themerc
-  /usr/share/themes/Orang/openbox-3/themerc
-  /usr/share/themes/Syscrash/openbox-3/max.xbm
-  /usr/share/themes/Syscrash/openbox-3/max_disabled.xbm
-  /usr/share/themes/Syscrash/openbox-3/max_pressed.xbm
-  /usr/share/themes/Syscrash/openbox-3/max_toggled.xbm
-  /usr/share/themes/Syscrash/openbox-3/themerc
-  /usr/share/xsessions/openbox-gnome.desktop
-  /usr/share/xsessions/openbox-kde.desktop
-  /usr/share/xsessions/openbox.desktop
-
-------------------
-
 Port Notes:
+
+----- version 3.4.8-1 -----
+Version bump.
 
 ----- version 3.4.7.2-10 -----
 Initial release for Cygwin 1.7.
