@@ -1,5 +1,5 @@
 category: X11
-requires: libgcc1 libglib2.0_0 libICE6 libintl8 libpango1.0_0 libSM6 libstartup-notification1_0 libX11_6 libXau6 libXcursor1 libXext6 libXft2 libXinerama1 libxml2 libXrandr2 python python-xdg xsetroot
+requires: libglib2.0_0 libICE6 libintl8 libpango1.0_0 libSM6 libstartup-notification1_0 libX11_6 libXau6 libXcursor1 libXext6 libXft2 libXinerama1 libxml2 libXrandr2 python python-xdg xsetroot
 sdesc: "Highly configurable minimalistic window manager"
 ldesc: "Openbox is a highly configurable, next generation window manager 
 with extensive standards support.
