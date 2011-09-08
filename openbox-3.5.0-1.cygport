@@ -1,0 +1,6 @@
+DESCRIPTION="Highly configurable *box-style window manager"
+HOMEPAGE="http://openbox.org/"
+SRC_URI="http://openbox.org/dist/${PN}/${P}.tar.gz"
+PATCH_URI="3.5.0-no-undefined.patch"
+
+CYGCONF_ARGS="--libexecdir=/usr/bin --disable-static"
