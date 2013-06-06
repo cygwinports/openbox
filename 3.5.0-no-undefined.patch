@@ -11,7 +11,7 @@
  	$(X_LIBS) \
  	$(PANGO_LIBS) \
  	$(GLIB_LIBS) \
-@@ -122,6 +124,7 @@ obt_libobt_la_CPPFLAGS = \
+@@ -122,13 +124,15 @@ obt_libobt_la_CPPFLAGS = \
  	-DDATADIR=\"$(datadir)\" \
  	-DCONFIGDIR=\"$(configdir)\"
  obt_libobt_la_LDFLAGS = \
@@ -19,3 +19,11 @@
  	-version-info $(OBT_CURRENT):$(OBT_REVISION):$(OBT_AGE)
  obt_libobt_la_LIBADD = \
  	$(XINERAMA_LIBS) \
+ 	$(XKB_LIBS) \
+ 	$(XRANDR_LIBS) \
+ 	$(XSHAPE_LIBS) \
+ 	$(XSYNC_LIBS) \
++	$(X_LIBS) \
+ 	$(GLIB_LIBS) \
+ 	$(XML_LIBS)
+ obt_libobt_la_SOURCES = \

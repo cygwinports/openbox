@@ -1,9 +1,0 @@
-category: X11
-requires: libglib2.0_0 libICE6 libImlib2_1 libintl8 libpango1.0_0 libSM6 libstartup-notification1_0 libX11_6 libXau6 libXcursor1 libXext6 libXft2 libXinerama1 libxml2 libXrandr2 python python-xdg xprop xsetroot
-sdesc: "Highly configurable minimalistic window manager"
-ldesc: "Openbox is a highly configurable, next generation window manager 
-with extensive standards support.
-
-The *box visual style is well known for its minimalistic appearance. 
-Openbox uses the *box visual style, while providing a greater number of 
-options for theme developers than previous *box implementations."
