@@ -1,0 +1,18 @@
+--- origsrc/openbox-3.5.2/Makefile.am
++++ src/openbox-3.5.2/Makefile.am
+@@ -79,6 +79,7 @@ obrender_libobrender_la_CPPFLAGS = \
+ 	-DG_LOG_DOMAIN=\"ObRender\" \
+ 	-DDEFAULT_THEME=\"$(theme)\"
+ obrender_libobrender_la_LDFLAGS = \
++	-no-undefined \
+ 	-version-info $(RR_CURRENT):$(RR_REVISION):$(RR_AGE)
+ obrender_libobrender_la_LIBADD = \
+ 	obt/libobt.la \
+@@ -128,6 +129,7 @@ obt_libobt_la_CPPFLAGS = \
+ 	-DDATADIR=\"$(datadir)\" \
+ 	-DCONFIGDIR=\"$(configdir)\"
+ obt_libobt_la_LDFLAGS = \
++	-no-undefined \
+ 	-version-info $(OBT_CURRENT):$(OBT_REVISION):$(OBT_AGE)
+ obt_libobt_la_LIBADD = \
+ 	$(X_LIBS) \
