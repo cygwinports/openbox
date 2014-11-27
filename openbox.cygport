@@ -16,3 +16,5 @@ PKG_NAMES="${NAME} ${NAME}-devel"
 openbox_REQUIRES="run xinit xprop xsetroot"
 openbox_CONTENTS="etc/ usr/bin/ usr/libexec/ usr/share/"
 openbox_devel_CONTENTS="usr/include/ usr/lib/"
+
+KEEP_LA_FILES="none"
