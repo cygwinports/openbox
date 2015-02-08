@@ -1,6 +1,6 @@
 NAME="openbox"
 VERSION=3.5.2
-RELEASE=3
+RELEASE=4
 CATEGORY="X11"
 SUMMARY="Highly configurable minimalistic window manager"
 DESCRIPTION="Openbox is a highly configurable, next generation window manager
