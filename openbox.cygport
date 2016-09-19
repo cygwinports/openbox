@@ -1,6 +1,6 @@
 NAME="openbox"
-VERSION=3.5.2
-RELEASE=4
+VERSION=3.6.1
+RELEASE=1
 CATEGORY="X11"
 SUMMARY="Highly configurable minimalistic window manager"
 DESCRIPTION="Openbox is a highly configurable, next generation window manager
@@ -10,11 +10,22 @@ greater number of options for theme developers than previous *box implementation
 DESCRIPTION="Highly configurable *box-style window manager"
 HOMEPAGE="http://openbox.org/"
 SRC_URI="http://openbox.org/dist/openbox/openbox-${VERSION}.tar.gz"
-PATCH_URI="3.5.2-no-undefined.patch"
+PATCH_URI="
+	3.5.2-no-undefined.patch
+	3.6.1-gnome-session.patch
+"
 
 PKG_NAMES="${NAME} ${NAME}-devel"
 openbox_REQUIRES="run xinit xprop xsetroot"
 openbox_CONTENTS="etc/ usr/bin/ usr/libexec/ usr/share/"
 openbox_devel_CONTENTS="usr/include/ usr/lib/"
+
+src_install() {
+	cd ${B}
+	cyginstall
+
+	dodir /usr/share/pixmaps/xwin
+	convert ${D}/usr/share/pixmaps/{openbox.png,xwin/openbox.ico}
+}
 
 KEEP_LA_FILES="none"
