@@ -3,11 +3,8 @@ VERSION=3.6.1
 RELEASE=1
 CATEGORY="X11"
 SUMMARY="Highly configurable minimalistic window manager"
-DESCRIPTION="Openbox is a highly configurable, next generation window manager
-with extensive standards support.  The *box visual style is well known for its
-minimalistic appearance. Openbox uses the *box visual style, while providing a
-greater number of options for theme developers than previous *box implementations."
-DESCRIPTION="Highly configurable *box-style window manager"
+DESCRIPTION="Openbox is a highly configurable, next generation *box-style window
+manager with extensive standards support."
 HOMEPAGE="http://openbox.org/"
 SRC_URI="http://openbox.org/dist/openbox/openbox-${VERSION}.tar.gz"
 PATCH_URI="
